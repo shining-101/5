@@ -1,0 +1,10 @@
+# open the google spreadsheet
+spreadsheet_name = "proxy-checker"  # replace with your spreadsheet name
+worksheet_name = "Proxy List"  # replace with your worksheet name
+
+spreadsheet = client.open(spreadsheet_name)  # open the google spreadsheet
+sheet = spreadsheet.worksheet(worksheet_name)  # open the specified worksheet
+
+proxies = sheet.get_all_records()  # get all the values in the sheet
+
+;)
